@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet - async";
+// import { Helmet } from "react-helmet - async";
 
-const  DocumentTitle =({ children }) => {
-    return (
-        <Helmet>
-            <title>{children}</title>
-        </Helmet>
-    );
-};
-export default DocumentTitle;
+// const  DocumentTitle =({ children }) => {
+//     return (
+//         <Helmet>
+//             <title>{children}</title>
+//         </Helmet>
+//     );
+// };
+// export default DocumentTitle;

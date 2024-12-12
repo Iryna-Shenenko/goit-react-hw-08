@@ -1,12 +1,12 @@
 import { Suspense } from "react";
 
-import  AppBox from '../components/AppBox/AppBox';
+import  AppBar from '../components/AppBar/AppBar';
 
  const Layout = ({ children }) => {
     
     return (
         <div>
-            <AppBox />
+            <AppBar />
             <Suspense fallback={null}>{children}</Suspense>
         </div>
     );

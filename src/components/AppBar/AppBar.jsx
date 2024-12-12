@@ -1,9 +1,9 @@
-import Navigation from "../../components/Navigation/Navigation";
+import Navigation from "../Navigation/Navigation";
 import { UserMenu} from "../UserMenu/UserMenu";
 import { useSelector } from 'react-redux';
 import  {AuthNav} from "../Authnav/AuthNav";
 import { selectIsLoggedIn } from "../../redux/auth/selectors";
-import css from "./AppBox.module.css";
+import css from "./AppBar.module.css";
 
 
 

@@ -9,9 +9,9 @@ import { selectIsRefreshing } from '../redux/auth/selectors';
 
  
 const HomePage = lazy(() => import('../pages/HomePage'));
-const RegisterPage = lazy(() => import ('../pages/RegisterPage'));
+const RegistrationPage = lazy(() => import ('../pages/RegistrationPage'));
 const LoginPage = lazy (() => import('../pages/LoginPage'));
-const ContactPage = lazy (() => import('../pages/ContactPage'));
+const ContactsPage = lazy (() => import('../pages/ContactsPage'));
 
 
  const App = ()=> {
@@ -31,11 +31,11 @@ const ContactPage = lazy (() => import('../pages/ContactPage'));
         <Layout>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/register" element={<RestrictedRoute redirectTo="/contacts" component={<RegisterPage />} />
+                <Route path="/register" element={<RestrictedRoute redirectTo="/contacts" component={<RegistrationPage />} />
                 } />
                 <Route path="/login" element={<RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
                  } />
-                 <Route path="/contacts" element={<PrivateRoute redirectTo="/login" component={<ContactPage />} /> 
+                 <Route path="/contacts" element={<PrivateRoute redirectTo="/login" component={<ContactsPage/>} /> 
                  } />
             </Routes>
         </Layout>

@@ -6,7 +6,7 @@ import { nanoid } from "@reduxjs/toolkit";
 
 
 
- const RegisterForm = () => {
+ const RegistrationForm = () => {
     const nameId = nanoid(2);
     const emailId = nanoid(2);
     const passwordId = nanoid(2);
@@ -46,4 +46,4 @@ return (
     </Formik>
 );
 };
-export default RegisterForm;
+export default RegistrationForm;

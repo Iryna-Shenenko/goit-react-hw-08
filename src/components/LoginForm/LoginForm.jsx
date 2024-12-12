@@ -14,14 +14,14 @@ const LoginForm = () => {
     
 
     const handleSubmit = (values, actions) => {
-        console.log(values);
+        // console.log(values);
 
         dispatch(  
             logIn({
             email: values.email,
             password: values.password
         })
-    )
+    );
 
     
     actions.resetForm();
