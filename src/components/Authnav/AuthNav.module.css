@@ -1,0 +1,18 @@
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 700;
+    color: brown;
+    white-space: nowrap;
+}
+
+.link.active {
+    color: blue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
