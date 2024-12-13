@@ -4,6 +4,7 @@ import axios from "axios";
 
 
 
+
  export const fetchContacts = createAsyncThunk("contacts/fetchAll", async (_, thunkAPI) => { 
     
     try {
@@ -24,6 +25,15 @@ import axios from "axios";
             }
         }
     
+    );
+    export const editContact = createAsyncThunk(
+        "contacts/editContact",
+        async ({contactId, name, number}, thunkAPI) => {
+            try {
+                const response =await axios.patch(`/contacts/${contactId}`, { name, number});
+                return response.data;
+            } catch (e) { return thunkAPI.rejectWithValue(e.message);}
+            }
     );
     
     export const deleteContact = createAsyncThunk(
